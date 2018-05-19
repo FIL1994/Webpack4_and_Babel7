@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
+  entry: ["@babel/polyfill", "./src/index.js"],
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
